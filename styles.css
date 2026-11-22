@@ -1840,28 +1840,43 @@ footer .footer-contact a:nth-of-type(3) { color: #d6e2df; }
 }
 
 
-/* Homepage: place the photo before booking actions on small screens only. */
-.home-hero .home-mobile-actions { display: none; }
+/* Homepage mobile: one set of actions, visually moved below the portrait. */
 @media (max-width: 760px) {
-  .home-hero .hero-copy > .hero-actions,
-  .home-hero .hero-copy > .hero-reassurance { display: none; }
-  .home-hero .intro { margin-bottom: 0; }
-  .home-hero .soft-hero-photo { margin-top: 22px; }
-  .home-hero .home-mobile-actions {
-    display: block;
-    width: 100%;
-    margin-top: 28px;
-    text-align: center;
+  .hero.home-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
-  .home-hero .home-mobile-actions .hero-actions {
+  .home-hero .hero-copy {
+    display: contents;
+  }
+  .home-hero .home-purpose-title { order: 1; }
+  .home-hero .home-hero-location { order: 2; }
+  .home-hero .hero-copy > .intro {
+    order: 3;
+    margin-bottom: 0;
+  }
+  .home-hero .soft-hero-photo {
+    order: 4;
+    margin: 22px auto 0;
+    width: min(100%, 430px);
+    min-height: 0;
+  }
+  .home-hero .hero-copy > .hero-actions {
+    order: 5;
     display: flex;
     justify-content: center;
-    gap: 12px;
     flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 34px;
+    width: 100%;
   }
-  .home-hero .home-mobile-actions .hero-reassurance {
-    padding: 0;
-    margin: 16px 0 0;
+  .home-hero .hero-copy > .hero-reassurance {
+    order: 6;
+    display: block;
+    padding-left: 0;
+    margin: 18px 0 0;
     text-align: center;
   }
+  .home-hero > .hero-foot { display: none; }
 }
