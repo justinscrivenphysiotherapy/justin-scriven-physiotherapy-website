@@ -1528,3 +1528,15 @@ footer .footer-legal { grid-column: 1/-1; display: flex; flex-direction: row; fl
     transform-origin: center bottom;
   }
 }
+
+
+/* Centre the final professional credential above the portrait on phones. */
+@media (max-width: 760px) {
+  .about-page .about-hero-facts span:last-child {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .about-page .about-hero-facts span:last-child b {
+    display: none;
+  }
+}
