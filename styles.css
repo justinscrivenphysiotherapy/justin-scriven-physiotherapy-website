@@ -1655,3 +1655,17 @@ footer .footer-legal { grid-column: 1/-1; display: flex; flex-direction: row; fl
   }
   .physio-hero .hero-foot span { display: block; text-align: center; }
 }
+
+
+/* Find Us: more breathing room under satnav heading and white button labels. */
+.directions-destination .destination-sat-nav h3 {
+  margin-bottom: 26px;
+}
+.directions-destination .destination-sat-nav .map-app-link,
+.directions-destination .destination-sat-nav .map-app-link-apple {
+  color: #fff;
+}
+.directions-destination .destination-sat-nav .map-app-link:hover,
+.directions-destination .destination-sat-nav .map-app-link-apple:hover {
+  color: #fff;
+}
