@@ -1519,3 +1519,12 @@ footer .footer-legal { grid-column: 1/-1; display: flex; flex-direction: row; fl
     transform-origin: 46% 43%;
   }
 }
+
+
+/* About hero portrait: make Justin fill more of the green arch on mobile. */
+@media (max-width: 760px) {
+  .about-page .about-portrait img {
+    transform: scale(1.26);
+    transform-origin: center bottom;
+  }
+}
