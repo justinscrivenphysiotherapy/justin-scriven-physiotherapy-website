@@ -1501,3 +1501,21 @@ footer .footer-legal { grid-column: 1/-1; display: flex; flex-direction: row; fl
   }
   .about-page .about-portrait figcaption { right: 8px; bottom: 16px; }
 }
+
+
+/* Closer people-focused crop for the seated exercise photo on phones only. */
+@media (max-width: 760px) {
+  .life-page .pls-clinic-photo:has(img[src="assets/strength-rehab.jpg"]) {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+  .life-page .pls-clinic-photo img[src="assets/strength-rehab.jpg"] {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: 46% 40%;
+    transform: scale(1.43);
+    transform-origin: 46% 43%;
+  }
+}
