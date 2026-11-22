@@ -1815,3 +1815,26 @@ footer .footer-contact a:nth-of-type(3) { color: #d6e2df; }
   .contact-reception-phone { align-items: flex-start; flex-direction: column; gap: 14px; }
   .directions-contact-choices-actions { flex-direction: column; gap: 18px; }
 }
+
+
+/* Slightly larger, easier-to-read contact card copy and headings. */
+.contact.contact-reception .contact-reception-card h3 {
+  font-size: clamp(25px, 2.9vw, 31px);
+}
+.contact.contact-reception .contact-reception-card p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.contact.contact-reception .contact-reception-action {
+  font-size: 17px;
+}
+.contact.contact-reception .contact-reception-phone h3 {
+  font-size: 22px;
+}
+.contact.contact-reception .contact-reception-phone p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+@media (max-width: 700px) {
+  .contact.contact-reception .contact-reception-card h3 { font-size: 26px; }
+}
