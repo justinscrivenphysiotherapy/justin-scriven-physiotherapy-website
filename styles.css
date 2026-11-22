@@ -1636,3 +1636,22 @@ footer .footer-legal { grid-column: 1/-1; display: flex; flex-direction: row; fl
     font-size: 14px;
   }
 }
+
+
+/* Physiotherapy hero: small-screen spacing, portrait crop and centred credentials. */
+@media (max-width: 760px) {
+  .physio-hero h1 > em {
+    display: block;
+    margin-top: 20px;
+  }
+  .physio-hero .physio-hero-image img {
+    transform: scale(1.14);
+    transform-origin: center 43%;
+  }
+  .physio-hero .hero-foot {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .physio-hero .hero-foot span { display: block; text-align: center; }
+}
