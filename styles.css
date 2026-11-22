@@ -1838,3 +1838,30 @@ footer .footer-contact a:nth-of-type(3) { color: #d6e2df; }
 @media (max-width: 700px) {
   .contact.contact-reception .contact-reception-card h3 { font-size: 26px; }
 }
+
+
+/* Homepage: place the photo before booking actions on small screens only. */
+.home-hero .home-mobile-actions { display: none; }
+@media (max-width: 760px) {
+  .home-hero .hero-copy > .hero-actions,
+  .home-hero .hero-copy > .hero-reassurance { display: none; }
+  .home-hero .intro { margin-bottom: 0; }
+  .home-hero .soft-hero-photo { margin-top: 22px; }
+  .home-hero .home-mobile-actions {
+    display: block;
+    width: 100%;
+    margin-top: 28px;
+    text-align: center;
+  }
+  .home-hero .home-mobile-actions .hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .home-hero .home-mobile-actions .hero-reassurance {
+    padding: 0;
+    margin: 16px 0 0;
+    text-align: center;
+  }
+}
