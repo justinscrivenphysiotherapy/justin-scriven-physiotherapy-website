@@ -1925,3 +1925,15 @@ footer .footer-contact a:nth-of-type(3) { color: #d6e2df; }
     margin-right: auto;
   }
 }
+
+
+/* Centre clinic telephone number below the homepage contact cards on mobile only. */
+@media (max-width: 760px) {
+  .contact.contact-reception .contact-reception-phone > a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
