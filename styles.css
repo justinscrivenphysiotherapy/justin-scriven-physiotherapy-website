@@ -1669,3 +1669,9 @@ footer .footer-legal { grid-column: 1/-1; display: flex; flex-direction: row; fl
 .directions-destination .destination-sat-nav .map-app-link-apple:hover {
   color: #fff;
 }
+
+
+/* Find Us: bring the Map heading slightly closer to the preceding dark green section. */
+@media (max-width: 760px) {
+  .map-section { padding-top: 54px; }
+}
