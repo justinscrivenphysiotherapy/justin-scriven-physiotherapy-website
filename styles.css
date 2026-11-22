@@ -1692,3 +1692,126 @@ footer .footer-legal { grid-column: 1/-1; display: flex; flex-direction: row; fl
     margin-left: auto;
   }
 }
+
+
+/* Contact redesign: booking first, WhatsApp second, telephone discreet. */
+.contact.contact-reception {
+  padding: clamp(70px, 8vw, 112px) 22px;
+  text-align: left;
+  background: #eaf2ed;
+  color: var(--ink);
+}
+.contact-reception-inner { max-width: 1010px; margin: 0 auto; }
+.contact-reception .eyebrow { color: #367e64; font-weight: 700; }
+.contact-reception h2 {
+  margin: 8px 0 16px;
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.08;
+}
+.contact.contact-reception .contact-reception-intro {
+  max-width: 730px;
+  margin: 0 0 34px;
+  color: #465b57;
+  font-size: clamp(17px, 1.65vw, 19px);
+  line-height: 1.6;
+}
+.contact-reception-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: 20px;
+}
+.contact-reception-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: clamp(22px,3vw,36px);
+  border-radius: 24px;
+  min-width: 0;
+}
+.contact-reception-book { background: #dcebbf; }
+.contact-reception-whatsapp { background: #fff; border: 1px solid #d0ddd4; }
+.contact-reception-card h3,.contact-reception-phone h3 { margin: 0; font-size: clamp(22px,2.4vw,27px); line-height: 1.25; }
+.contact.contact-reception .contact-reception-card p {
+  flex: 1;
+  margin: 0;
+  max-width: none;
+  color: #455b54;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.contact-reception-action {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 48px;
+  padding: 12px 22px;
+  border-radius: 99px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+.contact-reception-book-action { background: var(--lime); color: var(--ink); }
+.contact-reception-book-action:hover { background: #cef978; }
+.contact-reception-whatsapp-action { background: #eaf2ed; color: #1c5549; }
+.contact-reception-whatsapp-action:hover { background: #d6e8db; }
+.contact-reception-phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-top: 22px;
+  padding: 27px 6px 0;
+  border-top: 1px solid #cddbd1;
+}
+.contact-reception-phone h3 { font-size: 19px; }
+.contact.contact-reception .contact-reception-phone p {
+  max-width: 610px;
+  margin: 7px 0 0;
+  color: #52655e;
+  font-size: 15px;
+  line-height: 1.55;
+}
+.contact-reception-phone > a {
+  white-space: nowrap;
+  color: #285a4d;
+  font-size: 17px;
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+footer .footer-contact { gap: 9px; }
+footer .footer-contact a { width: fit-content; overflow-wrap: anywhere; }
+footer .footer-contact a:nth-of-type(2) { color: var(--lime); }
+footer .footer-contact a:nth-of-type(3) { color: #d6e2df; }
+.directions-contact-choices {
+  padding: clamp(64px,7vw,95px) 22px;
+  background: #eaf2ed;
+  color: var(--ink);
+}
+.directions-contact-choices-inner { max-width: 950px; margin: 0 auto; text-align: center; }
+.directions-contact-choices h2 { margin: 0 0 14px; font-size: clamp(38px,4.5vw,56px); }
+.directions-contact-choices p { max-width: 660px; margin: 0 auto 27px; color: #52655e; font-size: 18px; line-height: 1.55; }
+.directions-contact-choices-actions { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 18px 34px; }
+.directions-contact-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 50px;
+  padding: 12px 23px;
+  border-radius: 99px;
+  background: #dcebbf;
+  color: #225347;
+  font-weight: 700;
+}
+.directions-contact-whatsapp:hover { background: #cef978; }
+.directions-contact-phone { color: #52655e; font-size: 15px; }
+.directions-contact-phone a { display: inline-block; color: #285a4d; font-weight: 700; text-underline-offset: 4px; }
+@media (max-width: 700px) {
+  .contact.contact-reception { padding: 70px 20px; }
+  .contact-reception-grid { grid-template-columns: 1fr; gap: 14px; }
+  .contact-reception-card { padding: 25px 22px; }
+  .contact-reception-phone { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .directions-contact-choices-actions { flex-direction: column; gap: 18px; }
+}
