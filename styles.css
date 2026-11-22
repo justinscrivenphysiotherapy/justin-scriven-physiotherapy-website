@@ -1880,3 +1880,24 @@ footer .footer-contact a:nth-of-type(3) { color: #d6e2df; }
   }
   .home-hero > .hero-foot { display: none; }
 }
+
+
+/* Mobile homepage trial: matching centred section headings and contact titles. */
+@media (max-width: 760px) {
+  .home-hero ~ .about .home-personal-title,
+  .reviews-home .reviews-heading h2,
+  .home-experience h2,
+  .home-comprehensive h2 {
+    font-size: clamp(36px, 9.2vw, 42px);
+    line-height: 1.13;
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact.contact-reception #get-in-touch-heading,
+  .contact.contact-reception .contact-reception-card h3,
+  .contact.contact-reception .contact-reception-phone h3 {
+    text-align: center;
+  }
+}
