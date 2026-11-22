@@ -1,0 +1,12 @@
+# Permanent redirects for Wix pages with an equivalent on the new site.
+/the-physio /about 301
+/clinicdirections /directions 301
+/copy-of-directions /directions 301
+/reviews /physiotherapy#physio-reviews-heading 301
+/new-patient /physiotherapy#what-to-expect 301
+/rehabilitation /physiotherapy#rehab-gym-heading 301
+/the-approach-more-details /physiotherapy#treatment-heading 301
+/manual-therapy /physiotherapy#treatment-heading 301
+/shoulder-pain /physiotherapy 301
+/achilles-tendon /physiotherapy 301
+/data-protection-gdpr /legal#privacy 301
