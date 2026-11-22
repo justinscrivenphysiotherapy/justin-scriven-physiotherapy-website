@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A short Physio Life Skills profile to help you explore strength, balance and movement before a personalised Physio Life Skills assessment.">
+  <title>Your Physio Life Skills Profile | Justin Scriven Physiotherapy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="profile-page">
+  <a class="skip" href="#profile-main">Skip to the profile</a>
+  <header class="profile-header">
+    <a class="brand" href="index.html" aria-label="Justin Scriven Physiotherapy home">
+      <span class="brand-mark" aria-hidden="true">JS</span>
+      <span><strong>Justin Scriven</strong><small>Physiotherapy</small></span>
+    </a>
+    <a class="profile-exit" href="physio-life-skills.html">Exit profile</a>
+  </header>
+
+  <main id="profile-main" class="profile-shell">
+    <section class="profile-panel is-active" data-screen="intro" aria-labelledby="profile-title">
+      <p class="eyebrow">Physio Life Skills</p>
+      <h1 id="profile-title">Where is your most useful starting point?</h1>
+      <p class="profile-lead">Twelve short questions will help you reflect on three physical life skills: <strong>Balance, Movement and Strength.</strong></p>
+      <div class="profile-domain-row" aria-label="Profile areas">
+        <span>Balance</span><span>Movement</span><span>Strength</span>
+      </div>
+      <p>This takes about two minutes. It is a guide to your next step—not a medical diagnosis or a test to pass.</p>
+      <p class="profile-note"><strong>The Physio Life Skills assessment is being developed for early access in 2027.</strong> Your result is available immediately and does not require an email address.</p>
+      <button class="profile-primary" type="button" data-action="safety">Find my starting point <span>→</span></button>
+      <small>No physical tests are required.</small>
+    </section>
+
+    <section class="profile-panel" data-screen="safety" aria-labelledby="safety-title">
+      <p class="profile-kicker">Before we begin</p>
+      <h2 id="safety-title">Would a physiotherapy appointment be a better first step?</h2>
+      <p>Select anything that applies to you now.</p>
+      <div class="safety-options">
+        <label><input type="checkbox" value="recent"><span>A recent injury or a problem that is getting noticeably worse</span></label>
+        <label><input type="checkbox" value="pain"><span>Pain that regularly limits normal daily activities</span></label>
+        <label><input type="checkbox" value="neuro"><span>New or unexplained weakness, numbness, dizziness or changes in walking</span></label>
+        <label><input type="checkbox" value="falls"><span>A recent fall, or repeated near-falls</span></label>
+        <label><input type="checkbox" value="none"><span>None of these apply</span></label>
+      </div>
+      <div class="profile-actions"><button type="button" class="profile-back" data-action="intro">Back</button><button type="button" class="profile-primary" data-action="begin">Continue <span>→</span></button></div>
+      <p class="profile-note">If you have severe or sudden symptoms, seek appropriate urgent medical help rather than using this profile.</p>
+    </section>
+
+    <section class="profile-panel question-panel" data-screen="question" aria-live="polite">
+      <div class="profile-progress"><span id="progress-label">Question 1 of 12</span><div><i id="progress-bar"></i></div></div>
+      <p class="profile-kicker" id="question-domain">Balance</p>
+      <h2 id="question-text"></h2>
+      <div class="answer-list" id="answer-list"></div>
+      <button type="button" class="profile-back question-back" data-action="back-question">Back</button>
+    </section>
+
+    <section class="profile-panel result-panel" data-screen="result" aria-labelledby="result-title">
+      <p class="eyebrow">Your Physio Life Skills profile</p>
+      <h1 id="result-title">Your clearest opportunity is <em id="primary-domain"></em>.</h1>
+      <p class="profile-lead" id="result-summary"></p>
+      <div class="profile-bars" id="profile-bars"></div>
+      <div class="result-recommendation">
+        <p class="profile-kicker">A useful next step</p>
+        <h2 id="recommendation-title"></h2>
+        <p id="recommendation-copy"></p>
+        <div class="result-actions">
+          <a id="recommendation-link" class="profile-primary" href="#">Explore this assessment <span>→</span></a>
+          <a id="email-profile" class="profile-secondary" href="#">Share my profile with Justin</a>
+        </div>
+      </div>
+      <div class="secondary-result" id="secondary-result" hidden></div>
+      <section class="profile-followup" aria-labelledby="profile-followup-title">
+        <div>
+          <p class="profile-kicker">Keep a copy</p>
+          <h2 id="profile-followup-title">Would you like a copy?</h2>
+          <p>No email address is required. You can print this page or save it as a PDF.</p>
+          <button class="profile-primary" type="button" data-action="print-result">Save or print my profile <span>↓</span></button>
+        </div>
+        <div class="profile-email-choice">
+          <p class="profile-kicker">Stay connected</p>
+          <h2>Occasional Physio Life Skills emails.</h2>
+          <p>Practical notes from Justin about strength, balance, movement and staying active.</p>
+          <a class="profile-primary" href="mailto:office@justinscriven.co.uk?subject=Physio%20Life%20Skills%20emails&amp;body=Hello%20Justin%2C%0A%0APlease%20add%20me%20to%20your%20Physio%20Life%20Skills%20email%20list.%0A%0AName%3A%20">Receive Physio Life Skills emails <span>→</span></a>
+          <small>For now, this opens your email app so you can ask to join.</small>
+        </div>
+      </section>
+      <details class="profile-method">
+        <summary>How this profile was created</summary>
+        <p>The questions draw on established themes in later-life physical-health assessment: <a href="https://pubmed.ncbi.nlm.nih.gov/30312372/" target="_blank" rel="noopener">lower-limb strength and chair-rise ability</a>, <a href="https://www.cdc.gov/steadi/hcp/clinical-resources/index.html" target="_blank" rel="noopener">balance and falls screening</a>, and functional activities such as reaching, changing position and floor transfers.</p>
+        <p>Each answer contributes 0, 1 or 2 points to one area. A higher number means your answers showed more reasons to explore that area. This is an original signposting profile, not a validated clinical outcome measure.</p>
+      </details>
+      <p class="profile-disclaimer">This profile provides general guidance only. It cannot diagnose a condition, estimate your falls risk or replace an individual assessment by an appropriately qualified health professional.</p>
+      <button type="button" class="profile-restart" data-action="restart">Retake the profile</button>
+    </section>
+  </main>
+
+  <footer class="profile-footer"><span>HCPC PH54656</span><a href="legal.html#privacy">Privacy</a><a href="legal.html#disclaimer">Website disclaimer</a></footer>
+  <script src="profile.js"></script>
+</body>
+</html>
