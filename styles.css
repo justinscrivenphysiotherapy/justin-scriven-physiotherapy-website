@@ -1901,3 +1901,27 @@ footer .footer-contact a:nth-of-type(3) { color: #d6e2df; }
     text-align: center;
   }
 }
+
+
+/* Centre all homepage call-to-action buttons on phones; keep larger layouts unchanged. */
+@media (max-width: 760px) {
+  .home-hero .hero-actions,
+  .home-experience .home-approach-actions,
+  .home-comprehensive .home-approach-actions {
+    justify-content: center;
+  }
+  .home-services .home-service-card-copy > span { justify-self: center; }
+  .home-hero .hero-actions .button,
+  .home-hero ~ .about .home-personal-action,
+  .home-experience .home-approach-actions .button {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .home-hero ~ .about .about-copy { text-align: center; }
+  .home-experience .home-approach-actions .button { justify-content: center; }
+  .contact.contact-reception .contact-reception-action {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
